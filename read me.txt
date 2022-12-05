@@ -1,0 +1,4 @@
+用于展示实时效果，后端使用本地soket模拟实时数据
+socket地址：同级路径/socketTest-master
+
+web端运行程序后，需先在socket中执行npm start运行后，点击web端的开始按钮，即可获取实时数据

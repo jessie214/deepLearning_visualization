@@ -1,0 +1,235 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// Compatible with IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color:#063142;
+}
+
+::-webkit-scrollbar-track {
+  background-color:#063142;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0e4358;
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-button:start {
+  background-color:#0e4358;
+  background-size: 1px 1px;
+}
+
+::-webkit-scrollbar-button:end {
+  background-color:#0e4358;
+  background-size: 1px 1px;
+}
+
+html {
+  font-size: 192px;
+}
+
+/* 当页面宽度大于1000px且小于1200px的时候执行，1000-1200 */
+@media screen and (max-width: 1680px) {
+  html {
+    font-size: 10vw;
+  }
+}
+
+/* 当页面宽度大于1680px且小于1920px的时候执行,1680-1920 */
+@media screen and (min-width: 1681px) and (max-width: 1920px) {
+  html {
+    // font-size:192px;
+    font-size: 10vw;
+  }
+}
+
+.PageCon {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.PageLeft {
+  width: 25%;
+  height: 100%;
+  padding: 3vh 1vw 3vh 2vw;
+}
+.PageMiddle {
+  width: 50%;
+  height: 100%;
+}
+.PageRight {
+  width: 25%;
+  height: 100%;
+  padding: 3vh 2vw 3vh 1vw;
+}
+// .pageTitle {
+//   color: #fff;
+//   font-weight: bold;
+//   font-size: 32px;
+//   text-align: center;
+// }
+
+.TopInfoText {
+  float: right;
+  text-align: right;
+  background-image: url('./assets/images/heng.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.SingleTitle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 1vw;
+  padding-top: 1vw;
+  color: #fff;
+  background-color: rgba(128, 214, 252, 0.04);
+  > span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2vw;
+    font-size: .104rem; /* 20/192 */
+    line-height: 2vw;
+    text-align: center;
+    // background-image: url('./assets/images/divTitleL.png');
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: contain;
+    background-color: #0b191f;
+  }
+
+}
+
+
+.TabsWithTitle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 64%;
+    height: 2.2vw;
+    font-size: .104rem; /* 20/192 */
+    line-height: 1.4vw;
+    text-align: center;
+    background-image: url('./assets/images/divTitleS.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #fff;
+    font-size: .089rem; /* 17/192 */
+  }
+  .ant-tabs-tab.ant-tabs-tab-active ::after {
+    position: absolute;
+    top: 0.2vw;
+    left: 0.1vw;
+    display: block;
+    width: 3vw;
+    height: 1.5vw;
+    color: #fff;
+    background-image: url('./assets/images/tabsBgLeft.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+
+  }
+  .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap, .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+    font-size: .089rem; /* 17/192 */
+    transform: translate(65%);
+  }
+  .ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before {
+    border-bottom: none;
+  }
+}
+
+
+
+
+.ant-tabs {
+  color: #fff;
+}
+.ant-tabs-tab {
+  padding-left: 1vw;
+  color: #fff;
+  font-size: .089rem;
+}
+.ant-tabs-ink-bar {
+  background: none;
+}
+
+.MapContainer {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/images/centerTopLeftBorder.png'), url('./assets/images/centerTopRightBorder.png'), url('./assets/images/centerBottomLeftBorder.png'), url('./assets/images/centerBottomRightBorder.png');
+  background-repeat: no-repeat;
+  background-position: top left, top right, left bottom, right bottom;
+}
+
+// 自定义全局变量-jessie
+.ant-btn-primary{
+  background:#21a5d6;
+}
