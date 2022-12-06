@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ant Design Pro
 
 This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
@@ -55,3 +56,8 @@ npm test
 ## More
 
 You can view full document on our [official website](https://pro.ant.design). And welcome any feedback in our [github](https://github.com/ant-design/ant-design-pro).
+=======
+# web
+![image](https://github.com/jessie214/deepLearning_visualization/blob/main/img/vedio.gif)
+deepLearning_visualization
+>>>>>>> d33fb38c11143b425b6d17d526e0cf46ff8a2707
