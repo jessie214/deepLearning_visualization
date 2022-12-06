@@ -1,4 +1,8 @@
 ![image](https://github.com/jessie214/deepLearning_visualization/blob/main/img/vedio.gif)
+
+Deep learning model training monitoring system that displays the training progress, evaluation
+accuracy and loss rate in real time through data set selection, proportional allocation, and parameter settings .
+
 <<<<<<< HEAD
 # Ant Design Pro
 
