@@ -1,5 +1,5 @@
 /*
-学习率
+learning rate
 */
 import React, { useState, useEffect, useRef } from 'react';
 // import ReactEcharts from 'echarts-for-react';
@@ -52,7 +52,7 @@ const LearningRate = (props) => {
 
   const option = {
     title: {
-      text: '学习率',
+      text: 'learning rate',
       right: '0',
       top: '5',
       fontWeight: '',
@@ -136,13 +136,13 @@ const LearningRate = (props) => {
     ],
     series: [
       {
-        name: '学习率',
+        name: 'learning rate',
         type: 'line',
         smooth: false,
         symbolSize: 5,
         symbol: 'none',
         showSymbol: false,
-        itemStyle: {
+        itemStyle: {               
           normal: {
             lineStyle: {
               color: '#438edf',
